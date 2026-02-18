@@ -20,11 +20,11 @@ def animated_background():
                 height: 100vh;
                 z-index: -1;
                 object-fit: cover;
-                filter: brightness(0.4);
+                filter: brightness(0.6);
                 background-color: black;
                 transform: translateZ(0); /* Fuerza aceleración 3D en Opera */
             ">
-            <source src="/.mp4" type="video/mp4">
+            <source src="/background_loop-vid.mp4" type="video/mp4">
         </video>
         """
     )

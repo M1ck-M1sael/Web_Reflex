@@ -4,6 +4,7 @@ from Web_Reflex.views.header.header import header_component as header
 from Web_Reflex.styles import TYPEWRITER_ANIMATION
 from .state import State
 from Web_Reflex.components.background import animated_background
+from Web_Reflex.views.links.links import links
 
 def index() -> rx.Component:
     return rx.box(
@@ -13,6 +14,7 @@ def index() -> rx.Component:
         rx.vstack(
             navbar(),
             header(),
+            links(),
             rx.el.style(TYPEWRITER_ANIMATION),
             spacing="0", #ajusta el espacio entre componentes si es necesario
             width="100%",

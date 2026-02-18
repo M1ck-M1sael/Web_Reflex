@@ -8,7 +8,7 @@ __pycache__/
 .states/
 .reflex/
 
-# Entorno Virtual (¡Muy importante!)
+# Entorno Virtual
 venv/
 .venv/
 env/

@@ -5,7 +5,7 @@ def header_component() -> rx.Component:
     return rx.hstack(
         rx.vstack(
             # Avatar
-            rx.avatar(src="/El bigote.jpg", size="9"), #cambié el tamaño de 8 a 9
+            rx.avatar(src="/Image1.jpeg", size="9"), #cambié el tamaño de 8 a 9
             
             # Textos
             rx.text(
