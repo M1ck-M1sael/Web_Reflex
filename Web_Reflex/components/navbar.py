@@ -22,7 +22,7 @@ def navbar() -> rx.Component:
             align="center",
             spacing="2",
         ),
-        
+
         #empuja cualquier otra cosa a la derecha
         rx.spacer(),
 

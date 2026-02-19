@@ -10,7 +10,7 @@ TYPEWRITER_ANIMATION = """
 }
 """
 
-# Diccionario de estilo de texto
+# Diccionario de estilo de texto que se usará para el efecto de máquina de escribir
 typewriter_style = {
     "overflow": "hidden",
     "white_space": "nowrap",

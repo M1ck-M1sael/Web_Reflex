@@ -18,8 +18,9 @@ def link_button(text: str, url: str, icon_tag: str):
 
 def links():
     return rx.hstack(
-        link_button("LinkedIn", "www.linkedin.com/in/misael-lópez-franco-409566209", "linkedin"),
+        link_button("LinkedIn", "https://www.linkedin.com/in/misael-lópez-franco-409566209", "linkedin"),
         link_button("GitHub", "https://github.com/M1ck-M1sael", "github"),
+        link_button("Spotify", "https://open.spotify.com/user/udsaws99krcqg1hxz618s3cgj?si=13a9ed0c5fd94a26", "music"),
         spacing="3",
         justify="center",
         width="100%",
