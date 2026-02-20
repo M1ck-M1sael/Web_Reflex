@@ -8,12 +8,12 @@ def navbar() -> rx.Component:
         rx.hstack(
             rx.avatar(
                 src="/MickRM_Logo2.png", #logo
-                fallback="MR",          #por si no carga la imagen
+                fallback="MM",
                 size="5",
                 border_radius="full",
             ),
             rx.text(
-                "MickRM",
+                "Mick_Misael",
                 style=typewriter_style, #anmación
                 font_weight="bold",
                 font_family="JetBrains Mono", #estilo de letra
@@ -31,11 +31,11 @@ def navbar() -> rx.Component:
             rx.cond(State.idioma_ingles, "ES", "EN"), #dependiendo el idioma muestra las siglas del idioma contrario
             on_click=State.cambiar_idioma, #cambia el idioma al hacer click
             variant="ghost", 
-            size="2",
+            size="3",
         ),
 
         #cambio de tema claro/oscuro
-        rx.color_mode.button(),
+        #rx.color_mode.button(),
 
         width="100%",
         padding_x="2em",

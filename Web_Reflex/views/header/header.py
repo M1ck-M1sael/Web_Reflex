@@ -4,32 +4,41 @@ from Web_Reflex.state import State
 def header_component() -> rx.Component:
     return rx.hstack(
         rx.vstack(
-            # Avatar
-            rx.avatar(src="/Image1.jpeg", size="9"), #cambié el tamaño de 8 a 9
+            #cambié el avatar por una imágen
+            rx.image(
+                src="/Eseman.jpg",
+                width="600px",
+                heigth="auto",
+                border_radius="15%",
+                object_fit="cover"
+                ), 
             
-            # Textos
+            #textos
             rx.text(
                 rx.cond(
                     State.idioma_ingles,
-                    "Hey!👊 My Name is Misael López",
-                    "¡Hola!👊 Mi nombre es Misael López"
+                    "Hello there! My name es Misael",
+                    "¡Hola! Mi nombre es Misael"
                 ),
                 font_weight="bold",
+                size="7"
             ),
-            rx.text("@M1ck-M1sael", color_scheme="gray"),
+            #rx.text("@M1ck-M1sael", color_scheme="gray"),
+            #No creo usar esto, pero lo comento por si acaso
 
-            # Cuadro de texto (Asegúrate de que el paréntesis cierre DESPUÉS de las propiedades)
+            #cuadro de texto
             rx.card(
                 rx.text(
                     rx.cond(
                         State.idioma_ingles, 
-                        "Systems Engineer student at Tecnologico Nacional de México. Passionate about DevOps and AWS. Always eager to learn and grow in the tech world.",
-                        "Estudiante de Ingeniería en Sistemas Computacionales en el Tecnológico Nacional de México. Apasionado por DevOps y AWS. Siempre dispuesto a aprender y crecer en el mundo tecnológico."
+                        "Systems Administrator | Computer Systems Engineering Studen (TecNM) | Aspiring DevOps | AWS Cloud Practitioner (in progress)",
+                        "Systems Administrator | Estudiante de Ing. Sistemas Computacionales | DevOps en formación | AWS Cloud Practitioner en proceso"
                     ),
-                    text_align="left",
+                    text_align="center",
+                    size="7"
                 ),
-                max_width="670px", # Esto va ADENTRO del card
-                variant="classic", # Esto también va ADENTRO del card
+                max_width="970px",
+                variant="classic",
             ),
 
             spacing="4",
